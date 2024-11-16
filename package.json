@@ -2,13 +2,15 @@
   "name": "curso-api-rest-node-e-typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "ts-node-dev src/index.ts"
-  },
   "author": "Seu Nome",
   "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "yarn ts-node-dev ./src/index.ts"
+  },
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
