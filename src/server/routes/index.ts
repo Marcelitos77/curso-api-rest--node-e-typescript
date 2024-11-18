@@ -23,6 +23,10 @@ router.get('/', (req: Request, res: Response) => {
   return res.send('Olá, DEV!');
 });
 
-router.post('/cidades', validate(schema), CidadesController.create);
+router.post('/cidades', 
+  CidadesController.createQueryValidator,
+  CidadesController.createValidation,
+  CidadesController.create
+);
 
 export { router };
