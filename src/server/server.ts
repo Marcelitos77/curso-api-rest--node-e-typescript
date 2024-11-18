@@ -2,7 +2,7 @@ import express from 'express';
 import { Request, Response } from 'express';
 import { router } from './routes/index';
 import 'dotenv/config';
-import './shared/middwares/services/translationsYup';
+import '../services/translationsYup';
 
 const server = express();
 
